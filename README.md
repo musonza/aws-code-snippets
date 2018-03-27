@@ -1,1 +1,3 @@
-# aws-code-snippets
+# AWS Code Snippets
+
+Snippets that i have used in the past.
