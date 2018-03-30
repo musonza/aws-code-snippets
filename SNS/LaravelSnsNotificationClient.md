@@ -15,6 +15,13 @@ class SnsNotificationClient
         $this->client = \App::make('aws')->createClient('sns');
     }
 
+    /**
+     * Register device
+     * @param  string $os
+     * @param  string $token
+     * @param  string $arn
+     * @return string      sns endpoint
+     */
     public function register($os, $token, $arn)
     {
         // $os = strtolower($os);
@@ -35,6 +42,15 @@ class SnsNotificationClient
         return $data['EndpointArn'];
     }
 
+    /**
+     * Sends a push notification
+     * @param  string  $os
+     * @param  string  $endpoint
+     * @param  string  $message
+     * @param  integer $badge
+     * @param  array   $customData
+     * @return void
+     */
     public function send($os, $endpoint, $message, $badge = 1, $customData = [])
     {
         $payload = ['default' => $message];
@@ -128,4 +144,5 @@ class SnsNotificationClient
         ]);
     }
 }
+
 ```
