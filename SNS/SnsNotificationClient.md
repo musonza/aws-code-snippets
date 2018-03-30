@@ -1,3 +1,4 @@
+```php
 
 <?php
 
@@ -127,3 +128,4 @@ class SnsNotificationClient
         ]);
     }
 }
+```
