@@ -4,7 +4,7 @@ Snippets that i have used in the past.
 
 ## CloudFormation
 
-- [LAMP Single Instance](../master/CloudFormation/LAMP_Single_Instance.md)
+- [LAMP Single Instance](../master/CloudFormation/LAMP_Single_Instance.json)
 
 ## Lambda
 
